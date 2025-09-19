@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园智慧信息网络中心问答助手 - 测试版</title>
+    <style>
+        /* 全局样式 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: url('/frontend/image.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .image-preview {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .image-preview img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+        }
+        
+        .path-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-family: monospace;
+            text-align: center;
+        }
+        
+        .status {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>校园智慧信息网络中心问答助手</h1>
+        
+        <div class="intro">
+            <p>这是一个测试页面，用于验证背景图片和普通图片是否能正确加载。</p>
+            <p>背景图片已设置为 '/frontend/image.png'</p>
+        </div>
+        
+        <div class="image-preview">
+            <h3>直接图片预览</h3>
+            <img src="/frontend/image.png" alt="校园背景图片">
+        </div>
+        
+        <div class="path-info">
+            图片路径: /frontend/image.png
+        </div>
+        
+        <div class="status">
+            ✓ 图片路径已修复为正确的绝对路径
+        </div>
+    </div>
+</body>
+</html>
