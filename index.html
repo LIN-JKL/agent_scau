@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园智慧信息网络中心问答助手</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-top: 30px;
+        }
+        code {
+            font-family: Consolas, Monaco, monospace;
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .notice {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .step {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>校园智慧信息网络中心问答助手</h1>
+    </header>
+    
+    <div class="section">
+        <h2>项目简介</h2>
+        <p>这是一个校园智慧信息网络中心问答助手系统，提供了基于网页的用户界面和后端服务，可以帮助师生解答关于校园网络、信息化服务等方面的问题。</p>
+        
+        <div class="notice">
+            <strong>重要提示：</strong>这是一个需要在本地运行Python服务器的应用程序，而不是一个可以直接通过GitHub Pages访问的静态网站。请按照以下说明在本地运行此应用。
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>快速开始</h2>
+        
+        <h3>前提条件</h3>
+        <ul>
+            <li>安装Python 3.x</li>
+            <li>具备基本的网络环境</li>
+        </ul>
+        
+        <h3>启动服务器</h3>
+        <div class="step">
+            <p>1. 克隆此仓库到本地：</p>
+            <pre><code>git clone [仓库地址]</code></pre>
+        </div>
+        <div class="step">
+            <p>2. 导航到项目根目录：</p>
+            <pre><code>cd 校园智慧信息网络中心问答助手</code></pre>
+        </div>
+        <div class="step">
+            <p>3. 运行以下命令启动静态文件服务器（有两种选择）：</p>
+            
+            <p><strong>选择1：简单服务器（使用8081端口）</strong></p>
+            <pre><code>python simple_server.py</code></pre>
+            
+            <p><strong>选择2：更完善的服务器版本（推荐，使用8082端口）</strong></p>
+            <pre><code>python final_server.py</code></pre>
+        </div>
+        <div class="step">
+            <p>4. 服务器启动后，在浏览器中访问以下地址：</p>
+            <ul>
+                <li>简单服务器：<a href="http://localhost:8081/" target="_blank">http://localhost:8081/</a></li>
+                <li>完善服务器：<a href="http://localhost:8082/" target="_blank">http://localhost:8082/</a></li>
+            </ul>
+        </div>
+        <div class="step">
+            <p>5. 系统会自动重定向到完整问答助手界面</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>项目结构</h2>
+        <pre><code>├── backend/                # 后端代码目录
+│   └── 校园智慧信息网络中心问答助手最终版.py  # 主要后端服务实现
+├── docs/                   # 文档目录
+│   ├── 校园智慧信息网络中心问答助手使用文档.md  # 用户使用手册
+│   └── 知识库.md           # 系统知识内容
+├── frontend/               # 前端界面目录
+│   ├── image.png           # 界面背景图片
+│   └── 完整问答助手界面.html   # 主界面HTML文件
+├── simple_server.py        # 简单静态文件服务器
+├── final_server.py         # 更完善的服务器版本（推荐使用）
+└── README.md               # 项目说明文档</code></pre>
+    </div>
+    
+    <div class="section">
+        <h2>本地预览</h2>
+        <p>如果您想直接查看前端界面而不运行完整服务器，可以点击以下链接：</p>
+        <a href="/frontend/完整问答助手界面.html" target="_blank">直接查看前端界面</a>
+    </div>
+</body>
+</html>
